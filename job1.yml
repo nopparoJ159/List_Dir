@@ -1,0 +1,8 @@
+---
+- name: List file and directory in Linux1
+  hosts: Linux
+  become: yes
+  tasks:
+  - name: List file and directory in Linux1
+    shell: "ls -la"
+    register: result1
